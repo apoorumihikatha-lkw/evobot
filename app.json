@@ -1,7 +1,7 @@
 {
-  "name": "EvoBot",
+  "name": "Sindu Kanna v2.0",
   "description": "🤖 Discord Music Bot built with discord.js",
-  "repository": "https://github.com/eritislami/evobot",
-  "logo": "https://i.imgur.com/JFxgbWH.png",
+  "repository": "https://github.com/apoorumihikatha-lkw",
+  "logo": "https://i.imgur.com/onsngkq.png",
   "keywords": ["discord", "discordjs", "music", "bot"]
 }
