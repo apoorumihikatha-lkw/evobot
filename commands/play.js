@@ -23,9 +23,9 @@ module.exports = {
     const { channel } = message.member.voice;
 
     const serverQueue = message.client.queue.get(message.guild.id);
-    if (!channel) return message.reply("You need to join a voice channel first Homie!").catch(console.error);
+    if (!channel) return message.reply("සින්දු දාන්න කලින් voice channel එකකට Join වෙයන් බල්ලො!").catch(console.error);
     if (serverQueue && channel !== message.guild.me.voice.channel)
-      return message.reply(`You must be in the same channel as ${message.client.user}`).catch(console.error);
+      return message.reply(`මෙහෙ වරෙන් මිනිහො ${message.client.user} ඉන්න channel එකට`).catch(console.error);
 
     if (!args.length)
       return message
@@ -107,7 +107,7 @@ module.exports = {
     if (serverQueue) {
       serverQueue.songs.push(song);
       return serverQueue.textChannel
-        .send(`✅ **${song.title}** has been added to the queue by ${message.author} Homie`)
+        .send(`✅ **${song.title}** queue එකට දැම්ම ${message.author} පර හැත්ත`)
         .catch(console.error);
     }
 
