@@ -20,7 +20,7 @@ module.exports = {
     if (!song) {
       queue.channel.leave();
       message.client.queue.delete(message.guild.id);
-      return queue.textChannel.send("🚫 Music queue ended Homie.").catch(console.error);
+      return queue.textChannel.send("🚫 මම යනව තොපිලා ඕන කුදයක් ගහගනින්. පර බල්ලෝ.").catch(console.error);
     }
 
     let stream = null;
