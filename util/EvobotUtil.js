@@ -4,7 +4,7 @@ module.exports = {
     const botChannel = member.guild.voice.channelID;
 
     if (channelID !== botChannel) {
-      member.send("You need to join the voice channel first Homie!").catch(console.error);
+      member.send("සින්දු දාන්න කලින් voice channel එකකට Join වෙයන් බල්ලො!").catch(console.error);
       return;
     }
 
