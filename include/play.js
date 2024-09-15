@@ -18,9 +18,9 @@ module.exports = {
     const queue = message.client.queue.get(message.guild.id);
 
     if (!song) {
-      queue.channel.leave();
+      setTimeout(function() { if (!queue.connection.dispatcher && message.guild.me.voice.channel ) {queue.channel.leave(); queue.textChannel.send("I have left the channel. See you again.").catch(console.error);} else return },120000);
       message.client.queue.delete(message.guild.id);
-      return queue.textChannel.send("🚫 මම යනව තොපිලා ඕන කුදයක් ගහගනින්. පර බල්ලෝ.").catch(console.error);
+      //return queue.textChannel.send("🚫 මම යනව තොපිලා ඕන කුදයක් ගහගනින්. පර බල්ලෝ.").catch(console.error);
     }
 
     let stream = null;
